@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@600&family=Poppins:wght@600&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.header-box {
+  background-color: #1f2937;
+  height: 20vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading {
+  background-image: linear-gradient(to right, #656bff, #ff8787);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: 272px;
+  font-size: 56px;
+}
