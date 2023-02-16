@@ -15,8 +15,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  z-index: -1;
 }
 
 #heading {
@@ -25,6 +23,7 @@
   -webkit-background-clip: text;
   width: 272px;
   font-size: 56px;
+  font-weight: 600;
 }
 
 /******************************************* ****************************/
@@ -36,7 +35,6 @@ body {
 }
 
 .task-entry {
-  background-color: aqua;
   height: 48px;
   width: 624px;
   margin-top: 50px;
@@ -65,21 +63,56 @@ body {
   border: none;
   border-radius: 8px;
   background: linear-gradient(to right, #656bff, #ff8787);
-
   color: #fff;
   font-weight: 600;
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
 }
 
-#circle {
-  position: absolute;
-  height: 22px;
-  width: 22px;
-  color: #000;
-  z-index: 1;
+#create-btn:hover {
+  background: linear-gradient(to right, #ff8787, #656bff);
+  font-size: 17px;
+}
+
+#create-btn:active {
+  font-size: 20px;
+}
+
+/******************************************* ****************************/
+
+/************************************* Task Counter ****************************/
+
+.task-count {
+  width: 624px;
+  height: 24px;
+  margin: 32px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#total-num {
+  background: linear-gradient(to right, #656bff, #ff8787);
+  margin-left: 16px;
+  height: 24px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  line-height: 16px;
+}
+
+#done-num {
+  margin-left: 16px;
+  background: linear-gradient(to right, #322eff, #b121bd);
+  height: 24px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  line-height: 16px;
 }
 
 /******************************************* ****************************/
