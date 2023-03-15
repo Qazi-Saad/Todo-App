@@ -69,7 +69,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.2s;
+  cursor: pointer;
+  transition: 0.1s;
 }
 
 #create-btn:hover {
